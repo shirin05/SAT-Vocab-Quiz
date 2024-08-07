@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width=device-width, initial scale=1.0">
+        <!-- title that shows in browser mini top tab -->
+        <title> SAT Vocabulary Quiz </title>
+        <!-- links to css file -->
+        <link rel = "stylesheet" href="/static/web-style.css">
+    </head>
+    <body>
+        <!-- for the mini snowman -->
+        <div class = "snowman">
+            <img src = "/static/snowman.png" width = 100 height = 100>
+        </div>
+        <div class = "snowman1">
+            <img src = "/static/snowman.png" width = 100 height = 100>
+        </div>
+        <!-- for the snowflake animations -->
+        <style>
+            .snowflake {
+              color: #ecffff;
+              font-size: 1em;
+              font-family: Arial, sans-serif;
+            }
+             
+            .snowflake,.snowflake .inner{animation-iteration-count:infinite;animation-play-state:running}@keyframes snowflakes-fall{0%{transform:translateY(0)}100%{transform:translateY(110vh)}}@keyframes snowflakes-shake{0%,100%{transform:translateX(0)}50%{transform:translateX(80px)}}.snowflake{position:fixed;top:-10%;z-index:9999;-webkit-user-select:none;user-select:none;cursor:default;animation-name:snowflakes-shake;animation-duration:3s;animation-timing-function:ease-in-out}.snowflake .inner{animation-duration:10s;animation-name:snowflakes-fall;animation-timing-function:linear}.snowflake:nth-of-type(0){left:1%;animation-delay:0s}.snowflake:nth-of-type(0) .inner{animation-delay:0s}.snowflake:first-of-type{left:10%;animation-delay:1s}.snowflake:first-of-type .inner,.snowflake:nth-of-type(8) .inner{animation-delay:1s}.snowflake:nth-of-type(2){left:20%;animation-delay:.5s}.snowflake:nth-of-type(2) .inner,.snowflake:nth-of-type(3) .inner{animation-delay:4s}.snowflake:nth-of-type(4){left:40%;animation-delay:2s}.snowflake:nth-of-type(10) .inner,.snowflake:nth-of-type(5) .inner{animation-delay:8s}.snowflake:nth-of-type(6){left:60%;animation-delay:2s}.snowflake:nth-of-type(7){left:70%;animation-delay:1s}.snowflake:nth-of-type(7) .inner{animation-delay:2.5s}.snowflake:nth-of-type(8){left:80%;animation-delay:0s}.snowflake:nth-of-type(9){left:90%;animation-delay:1.5s}.snowflake:nth-of-type(9) .inner{animation-delay:3s}.snowflake:nth-of-type(10){left:25%;animation-delay:0s}.snowflake:nth-of-type(11){left:65%;animation-delay:2.5s}
+            </style>
+            <div class="snowflakes" aria-hidden="true">
+              <div class="snowflake">
+                <div class="inner">❅</div>
+              </div>
+              <div class="snowflake">
+                <div class="inner">❆</div>
+              </div>
+              <div class="snowflake">
+                <div class="inner">❃</div>
+              </div>
+              <div class="snowflake">
+                <div class="inner">❇</div>
+              </div>
+              <div class="snowflake">
+                <div class="inner">❉</div>
+              </div>
+              <div class="snowflake">
+                <div class="inner">❊</div>
+              </div>
+              <div class="snowflake">
+                <div class="inner">❋</div>
+              </div>
+              <div class="snowflake">
+                <div class="inner">❆</div>
+              </div>
+              <div class="snowflake">
+                <div class="inner">❈</div>
+              </div>
+            </div>
+        <!-- main box for content -->
+        <div class = "container">
+            <!-- header -->
+            <h1> SAT Vocabulary Quiz</h1>
+            <!-- box for word displaying and buttons -->
+            <div id="word-container">
+                <!-- paragraph to display the chosen word -->
+                <p id="word"></p>
+                <!-- holds choice buttons -->
+                <div id = "choices" style = "display:none;">
+                    <!-- button for option one -->
+                    <button class = "choices-button" id="choiceA"></button>
+                    <!-- and for option two -->
+                    <button class = "choices-button" id="choiceB"></button>
+                </div>
+            </div>
+        </div>
+        <!-- link to java script file -->
+        <script src="/static/interacter.js"></script>
+    </body>
+    <!-- for the snow pile on floor -->
+    <div class = "snowfloor">
+        <!-- width measurement helps it fit screen -->
+        <img src = "/static/snowfloor.png" width = 100% height = 400>
+    </div>
+</html>

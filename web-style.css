@@ -1,0 +1,56 @@
+*{ 
+    margin:0;
+    padding:0;
+    font-family: 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+}
+
+body{
+    background: linear-gradient(#061b41, #304e86);
+    text-align: center;
+    padding: 0;
+}
+
+.container{
+    background-color:blanchedalmond;
+    border-style: ridge;
+    border-color: #700b0b;
+    border-width: 1cm;
+    padding: 30px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-radius: 100px;
+}
+
+#word {
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.choices-button {
+    background-color: #fbfbfc;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 20px;
+    width: 80%;
+    cursor: pointer;
+}
+
+.choices-button:hover {
+    background-color: #2ca271;
+}
+
+.snowman {
+    position:absolute;
+    top: 300px;
+    left: 80px;
+}
+.snowman1 {
+    position:absolute;
+    top: 300px;
+    right: 80px;
+}
